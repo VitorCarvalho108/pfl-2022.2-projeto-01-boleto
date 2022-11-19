@@ -184,6 +184,17 @@ Os seguintes requisitos devem ser satisfeitos para o seu código ter o conceito *
 1. O seu código deverá ser submetido pelo [GitHub Classroom](https://classroom.github.com/). 
 2. As tarefas são individuais e nenhum tipo de cópia ou similaridade com código, seja de outro aluno, seja da Internet ou livros, será aceita.
 
+## Estrutura não obrigatória
+
+A partir da **próxima tarefa** será obrigatório a entrega na forma de um projeto [Stack](https://docs.haskellstack.org/en/stable/). Você terá vantagens em utilizar esta estrutura ainda neste projeto. No arquivo [testes/Spec.hs](testes/Spec.hs) há uma série de testes para verificar se a sua solução está correta (que serão utilizados na correção), na estrutura de testes HSpec. Se você já utilizar o stack poderá fazer uso destes testes para ajudar a sua implementação.
+
+A sua solução deve ser implementada em um projeto **Stack** e deve possuir testes de unidade especificados em [HSpec](https://hspec.github.io/). Informação sobre o uso do Stack e HSpec:
+
+* [Instalação e uso do Stack e Testes de Unidade](https://github.com/rcarocha/ufcat-courses/blob/master/pfl/ambiente/ambiente-haskell.md#instala%C3%A7%C3%A3o-do-ambiente-haskell-e-stack)
+
+Vocês podem iniciar a sua solução sem usar o Stack e depois migrar, sem problema, para o uso do ambiente de execução.
+
+
 # Prazo
 
 O prazo para entrega da atividade está indicado no Google Classroom. Inicie o mais rápido possível e resolva as dúvidas e dificuldades que tiver com o professor. Depois desse prazo, você poderá efetuar correções na sua implementação - quando solicitadas pelo professor - em até 7 dias adicionais.
