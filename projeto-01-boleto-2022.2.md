@@ -1,4 +1,4 @@
-# Tarefa 2 de Programação Funcional e Lógica
+# Tarefa 1 de Programação Funcional e Lógica
 
 # Visão geral
 
@@ -18,19 +18,21 @@ Ambas as identificações traduzem um mesmo boleto bancário e possuem o mesmo conj
 Por exemplo, as seguintes "linha digitável" e "código de barras" representam o mesmo boleto:
 
 ```
-		00190.50095 40144.816069 06809.350314 3 37370000000100 - linha digitável
-		00193373700000001000500940144816060680935031 - código de barras
+00190.50095 40144.816069 06809.350314 3 37370000000100 - linha digitável
+00193373700000001000500940144816060680935031 - código de barras
 ```
 
 ## Estrutura da Linha Digitável
 
 Considere a seguinte estrutura dos 47 número da "linha digitável":
 
-		+-------------+--------------+--------------+---------+----------------+
-		|   Campo 1   |   Campo 2    |   Campo 3    | Campo 4 |    Campo 5     |
-		+-------------+--------------+--------------+---------+----------------+
-		| AAABC.CCCCX | DDDDD.DDDDDY | EEEEE.EEEEEZ | K       | UUUUVVVVVVVVVV |
-		+-------------+--------------+--------------+---------+----------------+
+```
++-------------+--------------+--------------+---------+----------------+
+|   Campo 1   |   Campo 2    |   Campo 3    | Campo 4 |    Campo 5     |
++-------------+--------------+--------------+---------+----------------+
+| AAABC.CCCCX | DDDDD.DDDDDY | EEEEE.EEEEEZ | K       | UUUUVVVVVVVVVV |
++-------------+--------------+--------------+---------+----------------+
+```
 
 Os números devem ser interpretados da seguinte maneira:
 
@@ -84,17 +86,21 @@ A função `resumeDigito`, que transforma um número de dois dígito em um dígito, s
 
 O multiplicador é uma sequência de alternada de "2" e "1", iniciando por "2", a associada às respectivas posições dos números do código, **excluindo** as posições dos dígitos verificadores. 
 
-		00190.50095 40144.816069 06809.350314 3 37370000000100
-		Campo 1     Campo 2      Campo 3
-		00190.50095 40144.816069 06809.350314
-		21212 1212  12121 21212  12121 21212     <--- multiplicador
+```
+00190.50095 40144.816069 06809.350314 3 37370000000100
+Campo 1     Campo 2      Campo 3
+00190.50095 40144.816069 06809.350314
+21212 1212  12121 21212  12121 21212     <--- multiplicador
+```
 
 Para o "campo 2":
 
 1. Aplicação do multiplicador: 
 
-		4x1 + 0x2 + 1x1 + 4x2 + 4x1 + 8x2 + 1x1 + 6x2 + 0x1 + 6x2
-		4   + 0   + 1   + 8   + 4   + 16  + 1   + 12  + 0   + 12
+```
+4x1 + 0x2 + 1x1 + 4x2 + 4x1 + 8x2 + 1x1 + 6x2 + 0x1 + 6x2
+4   + 0   + 1   + 8   + 4   + 16  + 1   + 12  + 0   + 12
+```
 
 2. Aplicação do `resumeDigito`, totalizando 31.
  
