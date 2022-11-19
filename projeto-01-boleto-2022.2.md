@@ -187,5 +187,3 @@ Os seguintes requisitos devem ser satisfeitos para o seu código ter o conceito *
 # Prazo
 
 O prazo para entrega da atividade está indicado no Google Classroom. Inicie o mais rápido possível e resolva as dúvidas e dificuldades que tiver com o professor. Depois desse prazo, você poderá efetuar correções na sua implementação - quando solicitadas pelo professor - em até 7 dias adicionais.
-
-
