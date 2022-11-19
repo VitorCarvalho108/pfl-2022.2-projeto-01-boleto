@@ -119,8 +119,10 @@ Você encontra uma demonstração completos para o cálculo dos campos 1, 2 e 3 para
 
 O número do boleto será apresentado na forma de uma String, podendo ou não conter espaços ou pontos. Para efeito de avaliação, espaços e pontos serão ignorados e os seguintes boletos deverão ser considerados iguais
 
-		"23791.11103 60000.000103 01000.222206 1 48622000000000"
-		"23791111036000000010301000222206148622000000000"
+```
+"23791.11103 60000.000103 01000.222206 1 48622000000000"
+"23791111036000000010301000222206148622000000000"
+```
 
 1. Função `boletoNum` que recebe um boleto e retorna uma lista de inteiros (`Int`) com o valor referente a cada posição do boleto.
 
