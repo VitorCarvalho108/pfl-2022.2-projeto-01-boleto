@@ -11,7 +11,7 @@
 -- stack Testes.hs
 
 import Test.Hspec
-import Tarefa2 -- atualize com o nome do seu modulo
+import Tarefa1 -- atualize com o nome do seu modulo
 
 
 fDiasMesAnoTodoMes = map diasMesAno [1..12]
@@ -19,7 +19,7 @@ fDiasMesAnoTodoMes = map diasMesAno [1..12]
 main :: IO ()
 main = hspec $ do
 
-        describe "Tarefa 2: Processamento de boleto bancário" $ do
+        describe "Tarefa 1: Processamento de boleto bancário" $ do
 
             it "boletoNum - teste original do enunciado" $
                 boletoNum "23791.11103 60000.000103 01000.222206 1 48622000000000" `shouldBe` [2,3,7,9,1,1,1,1,0,3,6,0,0,0,0,0,0,0,1,0,3,0,1,0,0,0,2,2,2,2,0,6,1,4,8,6,2,2,0,0,0,0,0,0,0,0,0]
