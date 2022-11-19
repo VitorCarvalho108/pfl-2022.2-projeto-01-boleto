@@ -124,7 +124,7 @@ O número do boleto será apresentado na forma de uma String, podendo ou não conte
 "23791111036000000010301000222206148622000000000"
 ```
 
-1. Função `boletoNum` que recebe um boleto e retorna uma lista de inteiros (`Int`) com o valor referente a cada posição do boleto.
+1. Função `boletoNum` que recebe um boleto (`String`) e retorna uma lista de inteiros (`Int`) com o valor referente a cada posição do boleto.
 
 		boletoNum "23791.11103 60000.000103 01000.222206 1 48622000000000" => [2,3,7,9,1,1,1,1,0,3,6,0,0,0,0,0,0,0,1,0,3,0,1,0,0,0,2,2,2,2,0,6,1,4,8,6,2,2,0,0,0,0,0,0,0,0,0]
 
